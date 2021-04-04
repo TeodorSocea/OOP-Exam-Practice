@@ -1,0 +1,35 @@
+Fie urmatorul header
+
+class Person
+{
+	
+};
+
+si urmatoarea functie main:
+
+int main()
+{
+    Person p = { "Ionut", 26, 1.83 };
+
+    cout << p["nume"] << " are " << p["varsta"] << " ani" << endl;
+
+
+    p.addNote(3);
+    p.addNote(7);
+    p.addNote(8);
+    p.addNote(10);
+
+    cout << int(p) << endl; // Afiseaza media aritmetica a notelor;
+    
+    return 0;
+}
+
+Adaugati membri si metodele necesare in clasa Person pentru ca functia main sa functioneze corect.
+
+Barem:
+a) [5 pct] Cod organizat (un fisier .h, un fisier .cpp cu implementarea si un fisier main.cpp pentru codul din main)
+b) [10 pct] Codul compileaza si ruleaza corect  
+c) [5 pct] Constructor
+d) [10 pct] Metoda addNote
+e) [15 pct] operator int
+f) [15] operator []
